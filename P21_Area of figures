@@ -1,0 +1,100 @@
+package com.areaoffigures;
+
+import java.util.Scanner;
+
+class Area{
+	static Scanner sc = new Scanner(System.in);
+	public static void areaTriangle() {
+		float base,height,area;
+		System.out.println("Enter the base and height of the triangle:");
+		System.out.print("Enter the base of the triangle = ");
+		base = sc.nextFloat();
+		System.out.print("Enter the height of the triangle = ");
+		height = sc.nextFloat();
+		System.out.println("The Base of triangle = "+base+" and\nThe height of triangle = "+height);
+		area = 0.5f * base *height;
+		System.out.println("The Area of Triangle is = "+area);
+	}	
+	
+	public static void areaRectangle() {
+		float length,width,area;
+		System.out.println("Enter the length and width of the rectangle:");
+		System.out.print("Enter the Length of the rectangle = ");
+		length = sc.nextFloat();
+		System.out.print("Enter the height of the rectangle = ");
+		width = sc.nextFloat();
+		System.out.println("The length of rectangle = "+length+" and\nThe width of rectangle = "+width);
+		area =  length *width;
+		System.out.println("The Area of rectangle is = "+area);
+		
+	}
+
+	public static void areaSquare() {
+		float side,area;
+		System.out.print("Enter the side of the square = ");
+		side = sc.nextFloat();
+		System.out.println("The side of square = "+side);
+		area = side*side;
+		System.out.println("The Area of square is = "+area);
+		
+	}
+
+	public static void areaCircle() {
+		float radius,area;
+		System.out.print("Enter the radius of the circle = ");
+		radius = sc.nextFloat();
+		System.out.println("The radius of circle = "+radius);
+		area = 3.14f*radius*radius;
+		System.out.println("The Area of circle is = "+area);
+			
+	}
+
+
+	
+}
+
+public class AreaOfFigures {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		boolean flag = true;
+		while(flag) {
+		System.out.println("Menu to find area of figures:");
+		System.out.println("1. Area of Triangle");
+		System.out.println("2. Area of Rectangle");
+		System.out.println("3. Area of Square");
+		System.out.println("4. Area of Circle");
+		System.out.print("Enter your choice = ");
+		int choice = sc.nextInt();
+		
+		switch(choice) {
+		case 1:Area.areaTriangle();
+			break;
+		case 2:Area.areaRectangle();
+			break;
+		case 3:Area.areaSquare();
+			break;
+		case 4:Area.areaCircle();
+			break;
+		default:
+			System.out.println("Ivalid Input");
+			break;
+		}
+		System.out.println("Do you want to continue the program enter y or if you want to discontinue press n ");
+		char ch = sc.next().toLowerCase().charAt(0);
+		if (ch == 'y') {
+			 flag=true;
+		}
+		
+		else if(ch == 'n')
+			flag=false;
+			
+		
+		
+		}
+		System.out.println("Program is terminated");
+		sc.close();
+	}
+
+}
