@@ -1,0 +1,34 @@
+package com.profit;
+
+import java.util.Scanner;
+
+public class Profit {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the cost price of the product = ");
+		double cp = sc.nextDouble();
+		if (cp >=0 ) {
+			System.out.print("Enter the selling price of the product = ");
+			double sp = sc.nextDouble();
+			if(sp >= 0) {
+				System.out.println("The cost price = "+cp+"\nThe selling price = "+sp);
+				if(sp>cp) {
+					System.out.println("You have earned a profit");
+				}
+				else {
+					System.out.println("You have earned a loss");
+				}
+			}
+			else {
+				System.out.println("Please enter a valid selling price");
+			}
+			
+		}
+		else {
+			System.out.println("Please enter a valid cost price");
+		}
+	sc.close();
+	}
+
+}
