@@ -1,0 +1,29 @@
+package bill;
+
+import java.util.Scanner;
+
+public class Bill {
+
+	public static void main(String[] args) {
+		System.out.print("Enter the number of units = ");
+		Scanner sc = new Scanner(System.in);
+		double unit = sc.nextDouble();
+		double amount = 0;
+		if(unit>0 && unit<=100) {
+			amount = unit * 2;
+			System.out.println("The total electricity bill is = "+amount);
+		}
+		else if( unit>100 && unit <= 200) {
+			amount = (unit * 3)- 100;
+			System.out.println("The total electricity bill is = "+amount);
+
+		}
+		else {
+			amount = (unit * 4)- (100 + 200);
+			System.out.println("The total electricity bill is = "+amount);
+			
+		}
+		sc.close();
+	}
+
+}
