@@ -1,0 +1,26 @@
+package com.triangle;
+
+import java.util.Scanner;
+
+public class Triangle {
+
+	public static void main(String[] args) {
+		System.out.println("Enter the angles of triangle:"	);
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter First angle of triangle = ");
+		double a = sc.nextDouble();
+		System.out.print("Enter Second angle of triangle = ");
+		double b = sc.nextDouble();
+		System.out.print("Enter Last angle of triangle = ");
+		double c = sc.nextDouble();
+		System.out.println("The angles of triangle are \nAngle 1 = "+a+", Angle 2 = "+b+", Angle 3 = "+c);
+		if (a>0&&b>0&&c>0&&(a+b+c==180)) {
+			System.out.println("The triangle is valid");
+		}
+		else {
+			System.out.println("The triangle is not valid");	
+		}
+		sc.close();
+	}
+
+}
