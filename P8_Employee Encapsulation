@@ -1,0 +1,38 @@
+package com.employee;
+
+import java.util.Scanner;
+
+	class Employee {
+		//instance variables
+		int eid,age;
+		String ename;
+		float salary;
+		
+		void inputdata() {
+			Scanner sc =new Scanner(System.in);
+			System.out.println("Enter Employee name = ");
+			ename = sc.nextLine();
+			System.out.println("Enter Employee id = ");
+			eid = sc.nextInt();
+			System.out.println("Enter Employee salary = ");
+			salary = sc.nextFloat();
+			System.out.println("Enter Employee age = ");
+			age = sc.nextInt();
+		}
+		void displaydata() {
+			System.out.println("Name of the Employee = " +ename);
+			System.out.println("Employee id = "+eid);
+			System.out.println("Employee Salary = "+salary);
+			System.out.println("Employee age = "+age);
+		}
+			
+	}
+public class EmployeeEncapsulation {
+
+	public static void main(String[] args) {
+		Employee em = new Employee();
+		em.inputdata();
+		em.displaydata();
+	}	
+
+	}
