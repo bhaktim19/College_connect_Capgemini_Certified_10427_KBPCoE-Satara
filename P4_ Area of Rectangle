@@ -1,0 +1,14 @@
+package com.area;
+
+public class area {
+
+	public static void main(String[] args) {
+		int areaofrectangle,height,width;
+		height=10;
+		width=20;
+		areaofrectangle = height*width;
+		System.out.println("Area of rectangle of height = "+height+" and width = "+width+" is = "+areaofrectangle);
+		
+	}
+
+}
