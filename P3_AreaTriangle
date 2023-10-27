@@ -1,0 +1,17 @@
+package com.triangle;
+
+public class AreaTriangle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		float base,height,areatriangle;
+		
+		base = 4.5f;
+		height = 6.4f;
+		
+		areatriangle = (base * height)/2;
+		System.out.println("Area of triangle of base = "+base+" and height = "+height+" is "+areatriangle);
+				
+	}
+
+}
