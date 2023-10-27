@@ -1,0 +1,26 @@
+package com.switchevenodd;
+
+import java.util.Scanner;
+
+public class SwitchEvenOdd {
+
+	public static void main(String[] args) {
+		System.out.print("Enter the Number = ");
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		if(num==0)
+			System.out.println("The number is "+num+". Hence it is a special case");
+		else {
+		switch(num%2) {
+		case 0:
+			System.out.println("The number is a even number");
+			break;
+		case 1:
+			System.out.println("The number is a odd number");
+			
+			}
+		}
+		sc.close();
+	}
+
+}
