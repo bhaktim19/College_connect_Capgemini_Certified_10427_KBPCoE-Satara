@@ -1,0 +1,25 @@
+package com.triangle;
+
+import java.util.Scanner;
+
+public class Sides {
+
+	public static void main(String[] args) {
+		System.out.println("Enter the sides of triangle:");
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter First side of triangle = ");
+		double s1 = sc.nextDouble();
+		System.out.print("Enter Second side of triangle = ");
+		double s2 = sc.nextDouble();
+		System.out.print("Enter Last side of triangle = ");
+		double s3 = sc.nextDouble();
+		System.out.println("The sides of triangle are \nSide 1 = "+s1+", Side 2 = "+s2+", Side 3 = "+s3);
+		if(s1>0&&s2>0&&s3>0&&(s1+s2>s3)&&(s1+s3>s2)&&(s2+s3>s1)) {
+			System.out.println("The Triangle is valid");
+		}
+		else
+			System.out.println("The Triangle is not valid");
+		sc.close();
+	}
+
+}
