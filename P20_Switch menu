@@ -1,0 +1,49 @@
+package com.switchmenu;
+
+import java.util.Scanner;
+
+public class SwitchMenu {
+
+	public static void main(String[] args) {
+		System.out.println("Enter two numbers:");
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter number 1 = ");
+		int n1 = sc.nextInt();
+		System.out.print("Enter number 2 = ");
+		int n2 = sc.nextInt();
+		System.out.println("The two numbers are "+n1+" and "+n2);
+		System.out.println("Enter add to perform addition");
+		System.out.println("Enter sub to perform addition");
+		System.out.println("Enter mul to perform addition");
+		System.out.println("Enter div to perform addition");
+		System.out.print("Enter your choice = ");
+		String option = sc.next().toLowerCase();
+		int ans = 0;
+		switch(option) {
+		case "add":
+			ans = n1 + n2;
+			System.out.println("The addition of two numbers "+n1+" and "+n2+" is "+ans);
+			break;
+		case "sub":
+			ans = n1 - n2;
+			System.out.println("The subtraction of two numbers "+n1+" and "+n2+" is "+ans);
+			break;
+		case "mul":
+			ans = n1 * n2;
+			System.out.println("The multiplication of two numbers "+n1+" and "+n2+" is "+ans);
+			break;
+		case "div":
+			if(n2!=0) {
+			ans = n1 / n2;
+			System.out.println("The division of two numbers "+n1+" and "+n2+" is "+ans);
+			break;
+			}
+			else {
+				System.out.println("Please enter other than 0 value");
+			}
+		}
+		sc.close();
+		
+	}
+
+}
