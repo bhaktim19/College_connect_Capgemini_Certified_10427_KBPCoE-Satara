@@ -63,3 +63,12 @@
 
  # Program 21 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P21_Area%20of%20figures)
  Area of different Figures.
+
+  # Program 22 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P22_SimpleWhileLoop)
+  Simple while loop.
+
+  # Program 23 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P23_Factorial%20number%20using%20for%20loop)
+  Factorial number using for loop
+
+  # Program 24 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P24_Prime%20number%20using%20for)
+  Prime number using for loop
