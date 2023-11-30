@@ -1,24 +1,28 @@
+
 package com.edu.loop;
 
-public class PalNumUpto100 {
+import java.util.Scanner;
+
+public class PalNum {
 
 	public static void main(String[] args) {
-		int a,n,b,rev;
-		System.out.println("Palindrome No. 1-100 :");
-		
-		b=1;
-		while(b<=100) {
-			n=b;
-			rev=0;
-			while(n!=0) {
-				a=n%10;
-				rev=rev*10+a;
-				n=n/10;
-			}
-			if(b==rev)
-				System.out.println(b+" ");
-			b++;
+		Scanner sc = new Scanner (System.in);
+		int num,a,rev=0;
+		System.out.println("Enter a number :");
+		num = sc.nextInt();
+		int x=num;
+		while(num!=0) {
+			a=num%10;
+			rev=rev*10+a;
+			num=num/10;
 		}
+		
+		System.out.println("Reverse :"+rev);
+		
+		if(rev==x)
+			System.out.println("Number is palindrome");
+		else
+			System.out.println("Number is not palindrome");
 
 	}
 
