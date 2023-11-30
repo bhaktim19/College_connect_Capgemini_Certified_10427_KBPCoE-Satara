@@ -1,0 +1,27 @@
+package com.edu.loop;
+
+public class PrimeUpTo100 {
+
+	public static void main(String[] args) {
+		int num;
+		int fc;
+		
+		
+		System.out.println("Prime Numbers : ");
+		
+		for(num=1;num<=100;num++) 
+		{
+			fc=0;
+			for(int i=1;i<=num;i++)
+			{
+				if(num%i==0)
+					fc++;
+			}
+			if(fc==2)
+			{
+				System.out.print(num+" ");
+			}
+		}
+	}
+
+}
