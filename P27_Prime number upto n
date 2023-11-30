@@ -1,0 +1,34 @@
+package com.edu.loop;
+
+import java.util.Scanner;
+
+public class PrimeUpToN {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num;
+		int fc,k;
+		
+		System.out.println("Enter a Number :");
+		k=sc.nextInt();
+		
+		
+		System.out.println("Prime Numbers : ");
+		
+		for(num=1;num<=k;num++) 
+		{
+			fc=0;
+			for(int i=1;i<=num;i++)
+			{
+				if(num%i==0)
+					fc++;
+			}
+			if(fc==2)
+			{
+				System.out.println(num);
+			}
+		}
+
+	}
+
+}
