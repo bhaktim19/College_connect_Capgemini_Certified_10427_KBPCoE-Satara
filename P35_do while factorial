@@ -1,0 +1,29 @@
+package com.edu.loop;
+
+import java.util.Scanner;
+
+public class DoPrime {
+
+	public static void main(String[] args) {
+		int num,a;
+		
+		Scanner sc= new Scanner (System.in);
+		
+		System.out.println("Enter the number : ");
+		num=sc.nextInt();
+		
+		a=2;
+		do
+		{
+			if(num%a==0)
+				break;
+			a++;
+		}while(a<num);
+		
+		if(a==num)
+			System.out.println(num+" is prime.");
+		else
+			System.out.println(num+" is not prime.");
+	}
+
+}
