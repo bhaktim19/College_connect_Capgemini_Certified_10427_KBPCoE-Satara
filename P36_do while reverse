@@ -1,0 +1,22 @@
+package com.edu.loop;
+
+import java.util.Scanner;
+
+public class DoRev {
+
+	public static void main(String[] args) {
+		int a,n,rev=0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter anu number :");
+		n=sc.nextInt();
+		
+		do {
+			a=n%10;
+			rev=rev*10+a;
+			n=n/10;
+		}while(n!=0);
+		
+		System.out.println("Reverse Number :"+rev);
+	}
+
+}
