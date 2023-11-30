@@ -72,3 +72,52 @@
 
  ### Program 24 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P24_Prime%20number%20using%20for)
   Prime number using for loop
+
+ ### Program 25 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P25_Prime%20number%20upto%20100)
+ Prime number upto 100
+
+ ### Program 26 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P26_Reverse%20prime%20number)
+ Printing last 5 prime numbers in reverse order
+
+ ### Program 27 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P27_Prime%20number%20upto%20n)
+ Prime numbers upto n
+
+ ### Program 28 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P28_armstrong%20number)
+ Armstrong number program
+
+ ### Program 29 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P29_armstrong%20number%20upto%201000)
+ Armstrong nummbers upto 1000
+
+ ### Program 30 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P30_Display%20table)
+ Program to display table
+
+ ### Program 31 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P31_Reverse%20number)
+ Program to print reverse of given number
+
+ ### Program 32 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P32_Palindrome%20number)
+ Program to check if the given number is palindrome or not
+
+ ### Program 33 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P33_Palindrome%20numbers%20upto%20100)
+ Program to print palindrome numbers from 1 to 100
+
+ ### Program 34 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P34_Simple%20do%20while)
+ Simple do-while loop program
+
+ ### Program 35 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P35_do%20while%20factorial)
+ Factorial number using do-while loop
+
+ ### Program 36 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P36_do%20while%20reverse)
+ Reverse number using do-while loop
+
+ ### Program 37 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P37_do%20while%20palindrome)
+ Palindrome number using do-while loop
+
+ ### Program 38 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P38_do%20while%20prime)
+ Prime number using do while loop
+
+ ### Program 39 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P39_do%20while%20armstrong)
+ Armstrong number using do-while loop
+
+
+ 
+
