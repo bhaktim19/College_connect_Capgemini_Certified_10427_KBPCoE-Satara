@@ -1,0 +1,16 @@
+package com.edu.loop;
+
+public class SimpleDo {
+
+	public static void main(String[] args) {
+			int a;
+			a=5;
+			System.out.println("Start of the loop");
+			do {
+				System.out.println(a);
+				a++;
+			}while(a<=1);
+			System.out.println("End of the loop");
+	}
+
+}
