@@ -1,0 +1,19 @@
+package com.edu.loop;
+
+import java.util.Scanner;
+
+public class DispTable {
+
+	public static void main(String[] args) {
+		int num,c;
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Enter a number : ");
+		num= sc.nextInt();
+		for(int i=1;i<=10;i++) {
+			c=i*num;
+			System.out.println(c);
+		}
+
+	}
+
+}
