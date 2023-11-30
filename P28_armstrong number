@@ -1,0 +1,42 @@
+//program to find armstrong number
+package com.edu.loop;
+import java.util.Scanner;
+public class ArmstrongNo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num, orgnum, dc=0, sum=0, d;
+		Scanner sc= new Scanner(System.in); 
+		
+		System.out.println("Enter a Number:");
+		orgnum = sc.nextInt();
+		
+		num=orgnum;
+		
+		//count the No. of digits
+		while (num>0)
+		{
+			dc++;
+			num=num/10;
+		}
+		
+		//check armstrong No.
+		
+		num=orgnum;
+		
+		while(num>0)
+		{
+			d=num%10;
+			sum+=Math.pow(d, dc);
+			num = num/10;
+		}
+		
+		 if(sum == orgnum) {
+			  System.out.println(orgnum+" is Armstrong number");
+		  }else {
+			  System.out.println(orgnum+" is not  Armstrong number");
+		  }
+
+	}
+
+}
