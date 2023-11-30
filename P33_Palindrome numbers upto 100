@@ -1,0 +1,25 @@
+package com.edu.loop;
+
+public class PalNumUpto100 {
+
+	public static void main(String[] args) {
+		int a,n,b,rev;
+		System.out.println("Palindrome No. 1-100 :");
+		
+		b=1;
+		while(b<=100) {
+			n=b;
+			rev=0;
+			while(n!=0) {
+				a=n%10;
+				rev=rev*10+a;
+				n=n/10;
+			}
+			if(b==rev)
+				System.out.println(b+" ");
+			b++;
+		}
+
+	}
+
+}
