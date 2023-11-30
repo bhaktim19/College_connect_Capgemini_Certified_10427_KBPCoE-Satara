@@ -1,0 +1,40 @@
+package com.edu.loop;
+
+import java.util.Scanner;
+
+public class ArmUpto1000 {
+
+	public static void main(String[] args) {
+int num, dc,d,sum;
+		
+		Scanner sc  = new Scanner(System.in);
+		
+		for(int orgnum=1;orgnum<=1000;orgnum++) {
+		 num = orgnum; 
+		 
+		 //count number of digit
+		 dc=0;
+		 sum=0;
+		 while (num>0) {
+			 dc++;
+			 num=num/10;
+	     }
+         
+		 //check armstrong number
+		 num = orgnum;
+		  while(num>0) {
+			  d=num%10;
+			//  sum = (int) (sum + Math.pow(d, dc));
+			  sum+=Math.pow(d, dc);
+			  num = num/10;
+		  }
+		  
+		  if(sum == orgnum) {
+			  System.out.println(orgnum+" ");
+		  }
+			
+	  }//for 1 to 1000
+
+	}
+
+}
