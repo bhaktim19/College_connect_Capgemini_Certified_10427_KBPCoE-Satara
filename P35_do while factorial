@@ -2,28 +2,23 @@ package com.edu.loop;
 
 import java.util.Scanner;
 
-public class DoPrime {
+public class DoFact {
 
 	public static void main(String[] args) {
-		int num,a;
+		int a,n,fact=1;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter anu number :");
+		n=sc.nextInt();
 		
-		Scanner sc= new Scanner (System.in);
-		
-		System.out.println("Enter the number : ");
-		num=sc.nextInt();
-		
-		a=2;
-		do
-		{
-			if(num%a==0)
-				break;
+		a=1;
+		do {
+			fact=fact*a;
 			a++;
-		}while(a<num);
+		}while(a<=n);
 		
-		if(a==num)
-			System.out.println(num+" is prime.");
-		else
-			System.out.println(num+" is not prime.");
-	}
+		System.out.println("Factorial ="+fact);
+		
 
+	}
 }
+
