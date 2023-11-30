@@ -1,0 +1,42 @@
+package com.edu.loop;
+
+import java.util.Scanner;
+
+public class DoArm {
+
+	public static void main(String[] args) {
+		int num, orgnum, dc=0, sum=0, d;
+		Scanner sc= new Scanner(System.in); 
+		
+		System.out.println("Enter a Number:");
+		orgnum = sc.nextInt();
+		
+		num=orgnum;
+		
+		//count the No. of digits
+		do
+		{
+			dc++;
+			num=num/10;
+		}while (num>0);
+		
+		//check armstrong No.
+		
+		num=orgnum;
+		
+		do
+		{
+			d=num%10;
+			sum+=Math.pow(d, dc);
+			num = num/10;
+		}while(num>0);
+		
+		 if(sum == orgnum) {
+			  System.out.println(orgnum+" is Armstrong number");
+		  }else {
+			  System.out.println(orgnum+" is not  Armstrong number");
+		  }
+
+	}
+
+}
