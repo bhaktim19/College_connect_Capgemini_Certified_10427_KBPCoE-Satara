@@ -1,4 +1,4 @@
-/* Pattern:	 1
+	/* Pattern:	 1
 			 2 1
 			 3 2 1
 			 4 3 2 1
