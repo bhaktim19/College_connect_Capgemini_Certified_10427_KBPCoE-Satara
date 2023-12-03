@@ -1,6 +1,12 @@
 ## College_connect_Capgemini_Certified_10427_Githublink_KBPCoE_Satara
 ## List of Programs :-
 
+###Java Pattern Programs
+Contains implementations of 60 different Java pattern programs. Each program demonstrates the construction of a specific pattern using loops and conditional statements.
+The folder below contains all the pattern programs.
+[Open Folder](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/tree/main/Pattern%20Programs)
+
+
 ### Program 1 :- [execute](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/P1_Hello%20World)
  Hello world program.
 
