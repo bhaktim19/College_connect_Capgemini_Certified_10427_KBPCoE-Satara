@@ -1,0 +1,51 @@
+package com.edu.pack1;
+
+import com.edu.pack2.Product2;
+
+class SalesCompany extends Product2{
+	private int k; //within class
+	int d; //default access specifier 
+	public void display() {
+		System.out.println("Pid="+pid); //one package to other package 
+		                                 //only child class
+		System.out.println("Pname="+pname);
+		
+		System.out.println("Private data k :"+k);
+	}
+}
+
+public class MainApp1 {
+	
+		public void accessData() {
+			SalesCompany sob = new SalesCompany();
+			//System.out.println("Private data k"+sob.k);//;private
+			System.out.println("default value d="+sob.d); //default
+		}
+		public static void main(String[] args) {
+			//Product pob = new Product();
+			SalesCompany cob = new SalesCompany();
+			cob.display();
+
+	}
+
+}
+
+
+package com.edu.pack2;
+
+public class Product2 {
+	
+	protected int pid;
+	protected String pname;
+
+	public Product2() {
+		pid=1;
+		pname="Mobile";
+	}
+
+	protected void display() {
+		System.out.println("Pid="+pid);
+		System.out.println("Pname="+pname);
+	}
+
+}
