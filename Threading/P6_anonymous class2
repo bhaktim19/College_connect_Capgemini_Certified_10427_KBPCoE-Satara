@@ -1,0 +1,19 @@
+package com.edu;
+
+public class MainAppAnn1 {
+
+	public static void main(String[] args) {
+		Runnable run = new Runnable() {
+			
+			@Override
+			public void run() {
+				System.out.println("Run method");
+				
+			}
+		};
+		Thread t1= new Thread(run);
+		t1.start();
+
+	}
+
+}
