@@ -1,0 +1,72 @@
+package com.edu.bank;
+
+interface Bank {
+	void deposit(float amt);
+
+	void withdraw(float amt);
+
+	void checkbalance();
+
+	void display();
+}
+
+class Account implements Bank {
+	int accno;
+	String name;
+	float amount;
+
+	Account(int a, String name, float amt) {
+		this.accno = a;
+		this.name = name;
+		this.amount = amt;
+
+	}
+
+	@Override
+	public void deposit(float amt) {
+		this.amount = this.amount + amt;
+		System.out.println(amt + " Deposited successfully");
+
+	}
+
+	@Override
+	public void withdraw(float amt) {
+		// TODO Auto-generated method stub
+		if (this.amount < amt) {
+			System.out.println("You are not having sufficient balance");
+		} else {
+			this.amount = this.amount - amt;
+			System.out.println(amt + " Withdrawed successfully");
+		}
+
+	}
+
+	@Override
+	public void checkbalance() {
+		System.out.println("Available balance" + this.amount);
+
+	}
+
+	@Override
+	public void display() {
+		System.out.println("Account no:" + accno);
+		System.out.println("Account Holders name:" + name);
+		System.out.println("Avalaible balance:" + amount);
+
+	}
+
+}
+
+public class BankAppMain {
+
+	public static void main(String[] args) {
+		Account acc = new Account(1001, "Purushotham", 10000);
+		acc.display();
+		acc.checkbalance();
+		acc.deposit(1000);
+		acc.checkbalance();
+		acc.withdraw(5000);
+		acc.checkbalance();
+	}
+
+}
