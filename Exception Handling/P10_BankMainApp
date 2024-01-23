@@ -1,0 +1,41 @@
+package com.edu;
+
+class BankException extends Exception{
+	
+	private static final long serialVersionUID = 1L;
+
+	public BankException(String s) {// class Exception class constructor
+		super(s);
+	}
+}
+
+class Bank{
+	float amount;
+	Bank(){
+		amount = 5000;
+	}
+	void withDraw(float wamount) {
+		try {
+			if(wamount>amount) {
+				throw new BankException("Insufficient Balance Cannot withdraw");
+			}
+			else {
+				amount = amount-wamount;
+				System.out.println("Balance after withdraw "+amount);
+			}
+		}catch(BankException e) {
+			e.printStackTrace();
+		}
+	}
+}
+
+public class BankMainApp {
+
+	public static void main(String[] args) {
+		Bank bob = new Bank();
+		bob.withDraw(6000);
+		bob.withDraw(1500);
+
+	}
+
+}
