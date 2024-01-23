@@ -1,0 +1,35 @@
+package com.edu;
+
+import java.util.Scanner;
+
+class AgeException extends Exception{
+    
+	private static final long serialVersionUID = 1L;
+
+	public AgeException (String s){
+         super(s);
+     }
+}
+
+public class MainAppAgeException {
+
+	public static void main(String[] args) {
+		  int userage;
+          Scanner sc = new Scanner(System.in);
+          System.out.println("Enter age to check for voting");
+              userage=sc.nextInt();
+              try{
+                      if(userage<18){
+                             //throw new  AgeException("Not Eligible for voting");
+                             AgeException aob = new AgeException("Not Eligible for voting");
+                             throw(aob);
+                        }else{
+                                System.out.println("Eligible for voting");
+                          }
+              }catch(AgeException e){
+                        e.printStackTrace();
+              }
+
+	}
+
+}
