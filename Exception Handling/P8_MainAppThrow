@@ -1,0 +1,22 @@
+package com.edu;
+
+public class MainAppThrow {
+
+	public static void main(String[] args) {
+		 int a=10,b=0,c=0;
+         System.out.println("Before divison");
+        try{
+                   if(b==0) {
+                   throw new ArithmeticException("denominator is zero cannot divide");
+                 }else{
+                             c=a/b;
+                           System.out.println("Quotient="+c);
+                }
+    }catch(ArithmeticException e){
+                  e.printStackTrace();
+            }
+        System.out.println("After divison");
+
+	}
+
+}
