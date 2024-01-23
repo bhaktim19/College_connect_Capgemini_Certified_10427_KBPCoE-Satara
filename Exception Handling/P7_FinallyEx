@@ -1,0 +1,36 @@
+package com.edu;
+
+public class FinallyEx {
+
+	public static void main(String[] args) {
+		int a=10,b=2,c=0,num;
+		int ar[]= {4,7,8,9};
+		
+		System.out.println("Before division");
+		System.out.println("Before accessing array elements");
+		try {
+			//System.exit(0);
+			//return;
+		c=a/b;
+		System.out.println("c="+c);
+		num=ar[2];
+		System.out.println("num="+num);
+		
+		}
+		catch(ArithmeticException e) {
+			e.printStackTrace();
+			
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			System.out.println("Finally will execute always");
+			System.out.println("always execute the code resource closing file closing");
+		}
+		System.out.println("After division");
+		System.out.println("After accessing array elements");
+
+	}
+
+}
