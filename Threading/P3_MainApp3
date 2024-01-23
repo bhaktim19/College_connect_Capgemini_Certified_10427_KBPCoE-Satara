@@ -1,0 +1,32 @@
+package com.edu;
+
+class MyClass3 implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		System.out.println("Inside a run method"+Thread.currentThread());
+		
+	}
+	
+}
+
+public class MainApp3 {
+
+	public static void main(String[] args) {
+		MyClass3 ob =new MyClass3();
+		Thread tob =new Thread(ob);
+		
+		tob.setName("f");
+		System.out.println("Thread name "+tob.getName());
+		tob.start();
+		MyClass3 ob1 =new MyClass3();
+		Thread tob1 =new Thread(ob);
+		tob1.setName("S");
+		tob1.start();
+		
+		tob.run();
+		tob.run();
+	}
+
+}
