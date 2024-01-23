@@ -1,0 +1,61 @@
+package com.edu;
+
+class Bank{
+	float balance;
+	Bank(){
+	  balance = 1000;	
+	}
+	
+synchronized public void deposit(float damount) {
+		balance=balance+damount;
+		System.out.println("After depoist balance="+balance);
+		notify();
+		
+	}
+	
+	synchronized void withdraw(float wamount) throws InterruptedException {
+		if(wamount>balance) {
+			System.out.println("you are waiting for deposit");
+			wait();
+			System.out.println("You can withraw");
+			balance = balance-wamount;
+			System.out.println("After withdrwa balance="+balance);
+		
+		System.out.println("After wait");
+			
+		}
+		
+			
+	}
+	
+}
+
+public class MainAppWaitNotify {
+
+	public static void main(String[] args) {
+		Bank bob = new Bank();
+		Thread t1 =new Thread() {
+			public void run() {
+				try {
+					bob.withdraw(2000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			
+		};
+		t1.start();
+	
+	Thread t2 =new Thread() {
+		public void run() {
+			
+				bob.deposit(2000);
+			} 
+		};
+		
+	t2.start();
+
+	}
+
+}
