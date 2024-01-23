@@ -1,0 +1,25 @@
+package com.edu;
+
+class JoinThreadExample extends Thread{
+	@Override
+	public void run() {
+		for(int i=1;i<=100;i++) {
+			System.out.println("Thread in Excection i="+i+" "+Thread.currentThread());
+		}
+	}
+}
+
+public class MainApp4 {
+
+	public static void main(String[] args) throws InterruptedException {
+		JoinThreadExample anurag=new JoinThreadExample();
+		JoinThreadExample bhakti=new JoinThreadExample();
+		
+		anurag.start(); //call the run method by the jvm //60 minutes
+		anurag.join();
+		
+		bhakti.start(); 
+		
+	}
+
+}
