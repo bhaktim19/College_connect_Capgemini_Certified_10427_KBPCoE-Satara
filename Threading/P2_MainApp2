@@ -1,0 +1,52 @@
+package com.edu;
+
+class MyClass2 extends Thread {
+	@Override
+	public void run() {
+		for(int i=1;i<=5;i++) {
+		System.out.println("run method "+Thread.currentThread());
+		    
+		   try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		}
+		
+	}
+}
+
+public class MainApp2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+				System.out.println(Thread.currentThread()); //JVM
+				MyClass2 ob = new MyClass2(); //firstThread
+				MyClass2 ob1 = new MyClass2(); //secondthread //new
+				ob.setName("First");
+				ob1.setName("Second");
+				
+				ob.setPriority(Thread.MAX_PRIORITY); //10
+				ob1.setPriority(Thread.MIN_PRIORITY); //1
+				System.out.println("First Thread : " +ob.isAlive());
+				System.out.println("Second Thread : " +ob1.isAlive());
+				//ob.display();
+				ob.start(); // Runnable
+				System.out.println("First Thread : " +ob.isAlive());
+				
+				//ob.start(); //thread cannot be started more than once
+				try {
+					ob.join();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				System.out.println("First Thread : " +ob.isAlive());
+						
+				ob1.start(); //Runnable
+				System.out.println("Second Thread : " +ob1.isAlive());
+
+	}
+
+}
