@@ -1,0 +1,56 @@
+package com.edu.abs;
+
+interface MyInterface1{
+	int k=9; //public static final int k=9
+	void meth1();  //public abstract void meth1()
+	void meth2(); 
+}
+
+interface SecondInterface{
+	void meth3();
+}
+abstract class MyClass1 implements MyInterface1, SecondInterface{
+
+	@Override
+	public void meth1() {
+		//k=k+2;
+		System.out.println("method1 "+k);
+		
+	}
+
+	
+
+	@Override
+	public void meth3() {
+		System.out.println("meth3");
+		
+	}
+	
+}
+class SecondClass extends MyClass{
+
+	@Override
+	public void meth2() {
+		System.out.println("Method2");
+		
+	}
+
+	public void meth3() {
+		System.out.println("Method3");
+		
+	}
+	
+}
+
+public class MainInterface {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 //MyInterface mob = new  MyInterface(); //no object for interface
+		SecondClass cobj = new SecondClass();
+		cobj.meth1();
+		cobj.meth2();
+		cobj.meth3();
+	}
+
+}
