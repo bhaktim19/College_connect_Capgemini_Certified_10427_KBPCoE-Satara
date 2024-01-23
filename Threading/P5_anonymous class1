@@ -1,0 +1,16 @@
+package com.edu;
+
+public class MainAppAnn {
+
+	public static void main(String[] args) {
+		Thread tob =new Thread() {
+			@Override
+			public void run() {
+				System.out.println("Run method");
+			}
+		};
+		tob.start();
+
+	}
+
+}
