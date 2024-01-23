@@ -1,0 +1,17 @@
+package com.edu;
+
+public class MainApp2 {
+
+	public static void main(String[] args) {
+		String s= "abc";
+		System.out.println("Before converting the string to integer");
+		try {
+			int i=Integer.parseInt(s);
+		}catch(NumberFormatException e) {
+			e.printStackTrace();
+		}
+		System.out.println("After converting the string to integer");
+
+	}
+
+}
