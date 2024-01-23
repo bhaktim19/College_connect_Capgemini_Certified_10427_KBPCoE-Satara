@@ -1,0 +1,146 @@
+package com.bhakti.elevator;
+
+import java.util.Scanner;
+
+public class Elevator {
+	
+	Scanner sc = new Scanner(System.in);
+	
+	private int initial_floor=1; //initial floor at the start of program
+	
+	private char choice;//option selection
+	
+	private int floor;//floor selection
+	
+	Elevator() throws ElevatorException{//constructor
+		
+		while(true) {
+			
+			System.out.println("**********Welcome to Bhakti-Krishna Residency**********");
+			System.out.println("S : Select a floor ");
+			System.out.println("F : Fire Alarm");
+			System.out.println("Q : Quit");
+			System.out.print("Choose any option from above:");
+
+			
+			choice = sc.next().charAt(0);
+			try {
+			switch (choice) {
+			
+			case 's':
+			case 'S':
+				chooseFloor();
+				break;
+			
+			case 'f':
+			case 'F':
+				fireAlarm();
+				
+			case 'q':
+			case 'Q':
+				System.out.println("Thanks for using Elevator...");
+				System.out.println("Visit Again");
+				System.exit(0);
+
+				
+			default :
+				
+				throw new ElevatorException ("Invalid Input ....Kindly give the valid input...");
+				
+			
+			}//switch close
+			}catch (ElevatorException e) {
+				e.printStackTrace();
+			}
+			
+		}//while close
+		
+	}//constructor close
+
+	public void fireAlarm() {
+		
+		 System.out.println("Danger! Danger!  Danger!  Danger!  Danger!");
+		 System.out.println("You must exit from the Elevator now!");
+		 System.out.println();
+         System.out.println("Don't be panic...");
+         System.out.println("You are now at the floor "+initial_floor);
+         System.out.println("Eleavator is moving to Ground Floor");
+		
+         for(int i=initial_floor-1;i>=1;i--) {
+        	 
+        	 System.out.println(i+" V "); 
+        	 floor=i;
+        	 
+         }
+         
+          
+         System.out.println();
+         System.out.println("You are now at the floor "+floor);
+         System.out.println();
+
+	}//fire alarm close
+
+	public void chooseFloor() throws ElevatorException {
+		
+		System.out.println();
+		System.out.print("Enter a floor between 1-10 :");
+		
+		floor = sc.nextInt();
+		
+		if((floor>10)||(floor<1)) //If floor is less than 1 greater than 10....Exception
+         {    
+           throw new ElevatorException( "Invalid selection...Kindly give a valid input(1-10)");  
+         }
+		
+		if(floor==initial_floor)
+        {   
+            floor=choice ;
+            System.out.println("You have selected the destination as current floor");
+            System.out.println("You are now at the floor "+initial_floor);
+            System.out.println();
+        }
+		else if(floor > initial_floor)
+          {
+			Up();//Elevator moves up
+          }
+		else if(floor < initial_floor)
+          { 
+			Down();//Elevator moves down        
+          }
+		
+		 
+		
+	}//floor choosing close
+
+	private void Down() {
+		
+		 System.out.println("Going Down....");
+         for(int i=initial_floor-1;i>=floor;i--)
+         {
+        	 System.out.println(i+" V ");   
+         }
+         System.out.println("..Arrivied!"); 
+         initial_floor=floor;  
+         System.out.println();
+         System.out.println("You are now at the floor "+initial_floor);
+         System.out.println();
+		
+	}//down method close
+
+	private void Up() {
+		
+		 System.out.println("Going Up....");
+         for(int i=initial_floor+1;i<=floor;i++)
+         {
+        	 System.out.println(i+" ^ ");   
+         }
+         System.out.println("..Arrivied!"); 
+         initial_floor=floor; 
+         System.out.println();
+         System.out.println("You are now at the floor "+initial_floor);
+         System.out.println();
+		
+	}//up method close
+
+
+}//class close
