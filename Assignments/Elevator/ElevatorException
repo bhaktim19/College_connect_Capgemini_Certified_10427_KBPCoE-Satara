@@ -1,0 +1,11 @@
+package com.bhakti.elevator;
+
+public class ElevatorException extends Exception {
+
+	private static final long serialVersionUID = 1L;
+	
+	ElevatorException (String s){
+		 super(s);
+	}
+
+}
