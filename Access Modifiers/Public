@@ -1,0 +1,31 @@
+package com.edu.pack1;
+
+import com.edu.pack2.Product;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Product pob = new Product();
+		pob.display();
+	}
+
+}
+
+
+package com.edu.pack2;
+
+public class Product {
+	private int pid;
+	private String pname;
+	
+	public Product() {
+		pid=1;
+		pname="Mobile";
+	}
+
+	public void display() {
+		System.out.println("Pid="+pid);
+		System.out.println("Pname="+pname);
+	}
+}
