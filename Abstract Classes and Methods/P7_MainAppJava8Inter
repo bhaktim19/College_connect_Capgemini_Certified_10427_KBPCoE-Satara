@@ -1,0 +1,38 @@
+package com.edu.abs;
+
+interface MyInterJava8{
+	void m1();
+	default void m2() {
+		System.out.println("Default method java 8 features");
+	}
+	static void m3() {
+		System.out.println("Static method inside interface");
+	}
+}
+
+class Java8Default implements MyInterJava8{
+
+	@Override
+	public void m1() {
+		// TODO Auto-generated method stub
+		System.out.println("m1 method");
+	}
+	
+	public void m2() {
+		System.out.println("Default method over ridden");
+		MyInterJava8.super.m2();
+	}
+	
+}
+
+public class MainAppJava8Inter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Java8Default job = new Java8Default();
+		job.m1();
+		job.m2();
+		MyInterJava8.m3();
+	}
+
+}
