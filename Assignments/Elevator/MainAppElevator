@@ -1,0 +1,11 @@
+package com.bhakti.elevator;
+
+public class MainAppElevator {
+
+	public static void main(String[] args) throws ElevatorException {
+		
+		 Elevator eob =new Elevator(); 
+
+	}
+
+}
