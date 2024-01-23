@@ -38,8 +38,8 @@ I have registered on coding platforms HackerRank and HackerEarth also and develo
 
 I am currently working on the Certified Java Full Stack Professional program, and the certificates gained during the overall program can be found in the `/certificates` directory.
 
-- [Certificate 1](/certificates/certificate1.pdf)
-- [Certificate 2](/certificates/certificate2.pdf)
+- [Sololearn Introduction to Java](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/Certificates/Sololearn_Introduction%20to%20Java.jpg)
+
 
 
 ## Repository Contents
