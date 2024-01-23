@@ -1,0 +1,48 @@
+package com.edu;
+
+class PrintMultiplicationTable {
+	synchronized void printTable(int num) {
+		for (int i = 1; i <= 10; i++) {
+			System.out.println(num + "x" + i + "=" + num * i);
+		}
+	}
+
+}
+
+class Table1 extends Thread {
+	PrintMultiplicationTable t1;
+
+	Table1(PrintMultiplicationTable t1) {
+		this.t1 = t1;
+	}
+
+	public void run() {
+		t1.printTable(5);
+	}
+}
+
+class Table2 extends Thread {
+	PrintMultiplicationTable t2;
+
+	Table2(PrintMultiplicationTable t2) {
+		this.t2 = t2;
+	}
+
+	public void run() {
+		t2.printTable(2);
+	}
+}
+
+public class PrintTableMainApp {
+
+	public static void main(String[] args) {
+		PrintMultiplicationTable pt = new PrintMultiplicationTable();
+		Table1 tabobj1 = new Table1(pt);
+		Table2 tabobj2 = new Table2(pt);
+
+		tabobj1.start();
+		tabobj2.start();
+
+	}
+
+}
