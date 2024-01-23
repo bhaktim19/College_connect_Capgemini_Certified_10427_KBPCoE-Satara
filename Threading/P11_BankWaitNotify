@@ -1,0 +1,62 @@
+package com.edu;
+
+class Bank1{
+	float amount;
+	Bank1(){
+		amount=1000;
+	}
+	
+	synchronized public void deposit(float damount) {
+		amount+=damount;
+		System.out.println("Inside depoist");
+		System.out.println("after depoist amount="+amount);
+		notify();
+		
+	}
+	
+	synchronized public void withdraw(float wamount) throws InterruptedException {
+		System.out.println("inside withdraw");
+		if(wamount>amount) {
+			System.out.println("Deposit the amount");
+			wait();
+			
+			System.out.println("You can withdraw");
+			amount-=wamount;
+			System.out.println("After Withdraw balance="+amount);
+			
+		}
+	}
+}
+
+public class BankWaitNotify {
+
+	public static void main(String[] args) {
+		Bank1 bob = new Bank1();
+		
+		Thread t1 =new Thread() {
+			public void run() {
+				
+				try {
+					bob.withdraw(2000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			}
+		};
+		t1.start();
+		
+		Thread t2 = new Thread() {
+			public void run() {
+			
+					bob.deposit(2000);
+				
+			}
+			
+		};
+		t2.start();
+
+	}
+
+}
