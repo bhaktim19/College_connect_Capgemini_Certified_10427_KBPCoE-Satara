@@ -1,0 +1,42 @@
+package com.edu;
+
+public class MainAppVarArgs {
+  void display(String...args) {
+	  for(String s:args) {
+	     System.out.println(s);
+	  }
+  }
+	  void display(int i, String...args) {
+		  System.out.println("int value i="+i);
+		  for(String s:args) {
+		     System.out.println(s);
+		  }
+		  
+  }
+	
+	  void add(int...args) {
+		  int s=0;
+		  System.out.print("the sum  of ");
+		  for(int i:args) {
+			  s=s+i;
+			  System.out.print(i+",");
+		  }
+		  System.out.print(" is "+s);
+		  System.out.println();
+	  }
+	  
+	public static void main(String[] args) {
+		
+		MainAppVarArgs obj = new MainAppVarArgs();
+//		obj.display("hello");
+//		obj.display("hello" ,"hi");
+//		obj.display(34,"hello" ,"hi");
+		 
+		obj.add(5,4);
+		obj.add(5,4,7);
+		
+		
+		
+		
+     }
+}
