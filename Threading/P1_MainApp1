@@ -1,0 +1,39 @@
+package com.edu;
+
+class MyClass extends Thread {
+
+	@Override
+	public void run() {
+		for(int i=1; i<=5 ;i++ )
+		System.out.println("run method "+Thread.currentThread());
+	}
+	
+  
+}
+
+public class MainApp1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(Thread.currentThread()); //JVM
+		MyClass ob = new MyClass(); //firstThread
+		MyClass ob1 = new MyClass(); //secondthread
+		ob.setName("First");
+		ob1.setName("Second");
+		
+		System.out.println("First Thread :"+ob.isAlive());
+		System.out.println("Second Thread :"+ob1.isAlive());
+
+		//ob.display();
+		ob.start(); //
+		System.out.println("First Thread :"+ob.isAlive());
+		
+		//ob.start(); //thread cannot be started more than once
+		ob1.start();
+		System.out.println("Second Thread :"+ob1.isAlive());
+
+
+	}
+
+}
