@@ -23,31 +23,34 @@ The outputs of the system are as follows:
 
 Admin Validation:
 
-![Alt text](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/Product%20Inventory%20Management%20System/Outputs/Admin%20validation.png)
+![Alt text](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/Employee%20Management%20System/Outputs/Admin%20validation.png)
 
 
-Searching Products:
+Show All Employees - Admin operation:
 
-![Alt text](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/Product%20Inventory%20Management%20System/Outputs/Searching1.png)
-
-![Alt text](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/Product%20Inventory%20Management%20System/Outputs/Searching2.png)
+![Alt text](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/Employee%20Management%20System/Outputs/show%20all%20emp.png)
 
 
-Show Products:
+Insert Employee - Admin operation:
 
-![Alt text](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/Product%20Inventory%20Management%20System/Outputs/Show%20products.png)
-
-
-Insert Products:
-
-![Alt text](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/Product%20Inventory%20Management%20System/Outputs/Insert%20product.png)
+![Alt text](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/Employee%20Management%20System/Outputs/add%20emp.png)
 
 
-Update Products:
+Update Employee - Admin operation:
 
-![Alt text](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/Product%20Inventory%20Management%20System/Outputs/Update%20product.png)
+![Alt text](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/Employee%20Management%20System/Outputs/update%20emp.png)
 
 
-Exiting the system:
+Remove Employee - Admin operation:
 
-![Alt text](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/Product%20Inventory%20Management%20System/Outputs/Exiting.png)
+![Alt text](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/Employee%20Management%20System/Outputs/remove.png)
+
+
+Show Details - User function:
+
+![Alt text](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/Employee%20Management%20System/Outputs/show%20user.png)
+
+
+Update Details - User function:
+
+![Alt text](https://github.com/bhaktim19/College_connect_Capgemini_Certified_10427_KBPCoE-Satara/blob/main/Employee%20Management%20System/Outputs/update%20user.png)
